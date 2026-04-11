@@ -1,11 +1,25 @@
 body {
   font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
+
+/* TOP BAR */
+.topbar {
+  background: #0d2c6c;
+  color: white;
+  padding: 5px 0;
+  font-size: 14px;
 }
 
 /* HERO */
 .hero {
-  background: url('images/hero.jpg') center/cover no-repeat;
   height: 90vh;
+  background: url('images/hero.jpg') center/cover no-repeat;
   position: relative;
 }
 
@@ -13,22 +27,57 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.6);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
   color: white;
-  text-align: center;
-  padding-top: 200px;
 }
 
-.overlay h1 {
-  font-size: 40px;
-  font-weight: bold;
+.hero h1 {
+  font-size: 48px;
+  font-weight: 700;
 }
 
-.services .card {
-  border: none;
-  border-radius: 10px;
+/* SECTION */
+.section-card {
+  background: white;
+  padding: 50px;
+  margin-top: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-h2 {
-  font-weight: 600;
+/* SERVICES */
+.service-box {
+  padding: 25px;
+  transition: 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 30px;
+  color: #0d2c6c;
+  margin-bottom: 10px;
+}
+
+/* CERT */
+.cert-img {
+  width: 180px;
+  margin: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #0d2c6c;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
 }
