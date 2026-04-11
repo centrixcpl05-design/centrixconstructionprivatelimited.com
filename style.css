@@ -1,111 +1,34 @@
 body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  scroll-behavior: smooth;
-}
-
-/* HEADER */
-.header {
-  position: sticky;
-  top: 0;
-  background: #0A2540;
-  color: white;
-  padding: 10px;
-  text-align: center;
-  z-index: 1000;
-}
-
-nav a {
-  color: white;
-  margin: 10px;
-  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
-  background: url('https://images.unsplash.com/photo-1503387762-592deb58ef4e') center/cover;
+  background: url('images/hero.jpg') center/cover no-repeat;
+  height: 90vh;
   position: relative;
 }
 
 .overlay {
-  background: rgba(0,0,0,0.6);
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.hero-content {
-  position: relative;
+  background: rgba(0,0,0,0.5);
   color: white;
   text-align: center;
-  top: 40%;
+  padding-top: 200px;
 }
 
-.hero h1 {
-  font-family: 'Poppins';
-  font-size: 45px;
+.overlay h1 {
+  font-size: 40px;
+  font-weight: bold;
 }
 
-/* BUTTON */
-.btn {
-  background: #F59E0B;
-  padding: 12px 25px;
-  color: white;
-  text-decoration: none;
-}
-
-/* SECTION */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.light {
-  background: #f4f4f4;
-}
-
-/* GRID */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-/* CARD */
-.card {
-  background: white;
-  padding: 20px;
-  width: 260px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card img {
-  width: 100%;
+.services .card {
+  border: none;
   border-radius: 10px;
 }
 
-.card:hover {
-  transform: scale(1.05);
-}
-
-/* FOOTER */
-footer {
-  background: #0A2540;
-  color: white;
-  padding: 15px;
-}
-
-/* WHATSAPP */
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: green;
-  color: white;
-  padding: 15px;
-  border-radius: 50%;
+h2 {
+  font-weight: 600;
 }
