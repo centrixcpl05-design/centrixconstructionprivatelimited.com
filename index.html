@@ -3,78 +3,121 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Centrix Construction Pvt Ltd</title>
+<title>Centrix Construction Private limited</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<header class="header">
-  <h2>Centrix Construction</h2>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between">
+    <span>Centrix Construction Pvt Ltd</span>
+    <span>+91 96505 50414 | centrixcpl05@gmail.com</span>
+  </div>
+</div>
 
-<section id="home" class="hero">
-  <div class="overlay"></div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold">Centrix</a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link">Home</a></li>
+      <li class="nav-item"><a class="nav-link">Services</a></li>
+      <li class="nav-item"><a class="nav-link">Media</a></li>
+      <li class="nav-item"><a class="nav-link">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
   <div class="hero-content">
-    <h1>Building Excellence, Brick by Brick</h1>
-    <p>Civil Construction | Government Projects | Labour Contracting</p>
-    <a href="#contact" class="btn">Get Free Quote</a>
+    <h1>Centrix Construction Private limited</h1>
+    <p>Maintenance, Construction & Contracting<br>Government & Private Projects</p>
+    <button class="btn btn-primary">Get a Free Quote</button>
   </div>
 </section>
 
-<section id="services" class="section">
-<h2>Our Services</h2>
-<div class="grid">
-<div class="card">Civil Construction</div>
-<div class="card">PCC / Roddi Work</div>
-<div class="card">Labour Contracting</div>
-<div class="card">Government Tenders</div>
-</div>
+<!-- ABOUT CARD -->
+<section class="section-card container">
+  <h3 class="text-center">About Centrix Construction Private limited</h3>
+
+  <div class="text-center mt-3">
+    <img src="images/team.jpg" class="about-img">
+    <p class="mt-3 fw-bold">We build, We maintain, We strengthen the future of India</p>
+  </div>
+
+  <div class="text-center small-text">
+    Director: Adesh Kumar Rathor<br>
+    Managing Director: Shrawan Kumar<br>
+  </div>
 </section>
 
-<section id="projects" class="section light">
-<h2>Our Projects</h2>
-<div class="grid">
-<div class="card"><img src="images/p1.jpg"><p>PCC Work</p></div>
-<div class="card"><img src="images/p2.jpg"><p>Construction</p></div>
-<div class="card"><img src="images/p3.jpg"><p>Labour Work</p></div>
-</div>
+<!-- SERVICES -->
+<section class="section-card container">
+  <h3 class="text-center">Our Services</h3>
+
+  <div class="row text-center mt-4">
+    <div class="col-md-3">
+      <div class="service-box">
+        <div class="icon-circle">🏗️</div>
+        <h6>Construction</h6>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="service-box">
+        <div class="icon-circle">🚧</div>
+        <h6>Maintenance</h6>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="service-box">
+        <div class="icon-circle">👷</div>
+        <h6>Contracting</h6>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="service-box">
+        <div class="icon-circle">📄</div>
+        <h6>Tenders</h6>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="certifications" class="section">
-<h2>Certifications</h2>
-<div class="grid">
-<div class="card">GST Registered</div>
-<div class="card">Udyam Registered</div>
-<div class="card">ISO Certified</div>
-</div>
+<!-- CERTIFICATIONS -->
+<section class="section-card container text-center">
+  <h3>Our Certifications</h3>
+
+  <div class="mt-4">
+    <img src="images/cert1.jpg" class="cert-img">
+    <img src="images/cert2.jpg" class="cert-img">
+  </div>
 </section>
 
-<section id="contact" class="section light">
-<h2>Contact Us</h2>
-<p>📞 +91 96505500414</p>
-<p>📧 centrixcpl05@gmail.com</p>
-<p>📍 D8 D-Block, Near Shanti Nursing Home, Pandav Nagr,Delhi, India-110092</p>
-<a href="https://wa.me/919650550414" class="btn">WhatsApp Now</a>
+<!-- CONTACT -->
+<section class="section-card container">
+  <h3 class="text-center">Contact Us</h3>
+
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <p>📞 +91 96505 50414</p>
+      <p>📧 centrixcpl05@gmail.com</p>
+      <p>📍 D-8 D Block, Near Shanti Nursing Home, Pandav Nagar, Delhi - 1100092</p>
+    </div>
+
+    <div class="col-md-6">
+      <iframe src="https://maps.app.goo.gl/J7thiD8S537jKGfN9?g_st=awb"
+      width="100%" height="250"></iframe>
+    </div>
+  </div>
 </section>
 
-<footer>
-<p>© 2026 Centrix Construction Pvt Ltd</p>
-</footer>
-
-<a href="https://wa.me/919650550414" class="whatsapp">💬</a>
-
-<script src="script.js"></script>
-
-</body>
-</html>
