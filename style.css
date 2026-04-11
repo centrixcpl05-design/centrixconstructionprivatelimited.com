@@ -3,12 +3,10 @@ body {
   background: #f4f6f9;
 }
 
-/* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
 }
 
-/* TOP BAR */
 .topbar {
   background: #0d2c6c;
   color: white;
@@ -16,7 +14,6 @@ html {
   font-size: 14px;
 }
 
-/* HERO */
 .hero {
   height: 90vh;
   background: url('images/hero.jpg') center/cover no-repeat;
@@ -43,16 +40,18 @@ html {
   font-weight: 700;
 }
 
-/* SECTION */
 .section-card {
   background: white;
   padding: 50px;
   margin-top: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s;
 }
 
-/* SERVICES */
 .service-box {
   padding: 25px;
   transition: 0.3s;
@@ -68,16 +67,30 @@ html {
   margin-bottom: 10px;
 }
 
-/* CERT */
 .cert-img {
   width: 180px;
   margin: 10px;
 }
 
-/* FOOTER */
 .footer {
   background: #0d2c6c;
   color: white;
   padding: 15px;
   margin-top: 40px;
+}
+
+/* SOCIAL ICONS */
+.social a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: white;
+  background: #0d2c6c;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #007bff;
 }
