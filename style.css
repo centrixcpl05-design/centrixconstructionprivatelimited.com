@@ -70,6 +70,12 @@ html {
 .cert-img {
   width: 180px;
   margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.cert-img:hover {
+  transform: scale(1.05);
 }
 
 .footer {
@@ -79,18 +85,24 @@ html {
   margin-top: 40px;
 }
 
-/* SOCIAL ICONS */
+/* SOCIAL ICONS PROFESSIONAL */
 .social a {
   display: inline-block;
   margin-right: 10px;
-  font-size: 20px;
+  font-size: 18px;
   color: white;
-  background: #0d2c6c;
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
   transition: 0.3s;
 }
 
+/* BRAND COLORS */
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.instagram { background: #E4405F; }
+.linkedin { background: #0077B5; }
+.youtube { background: #FF0000; }
+
 .social a:hover {
-  background: #007bff;
+  transform: scale(1.1);
 }
