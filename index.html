@@ -33,18 +33,18 @@
 <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fixed-top">
   <div class="container">
 
-    <a class="navbar-brand fw-bold text-white d-flex align-items-center">
+    <a class="navbar-brand fw-bold text-black d-flex align-items-center">
       <img src="images/logo.png" width="40" class="me-2">
       CCPL
     </a>
 
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#home">Home</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#directors">Directors</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#services">Services</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#certifications">Certifications</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#directors">Directors</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#services">Services</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#certifications">Certifications</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#contact">Contact</a></li>
     </ul>
 
   </div>
@@ -109,7 +109,7 @@
       <img src="images/director1.jpg" class="director-img">
       <h5>Adesh Kumar Rathor</h5>
       <p>
-        A visionary leader with deep expertise in construction management and project execution. He focuses on operational excellence, quality control, and timely delivery of projects.
+        A visionary leader with deep expertise in construction management and project execution.
       </p>
     </div>
 
@@ -117,7 +117,7 @@
       <img src="images/director2.jpg" class="director-img">
       <h5>Shrawan Kumar</h5>
       <p>
-        An experienced professional driving business growth, vendor management, and strategic planning. He ensures smooth coordination and expansion of company operations.
+        An experienced professional driving business growth and planning.
       </p>
     </div>
 
@@ -177,19 +177,24 @@
 </footer>
 
 <script>
-let lastScrollTop = 0;
+let lastScroll = 0;
 const navbar = document.getElementById("navbar");
 
-window.addEventListener("scroll", function () {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
 
-    if (scrollTop > lastScrollTop && scrollTop > 50) {
-        navbar.style.top = "-80px";
+    if (currentScroll <= 0) {
+        navbar.style.top = "0";
+        return;
+    }
+
+    if (currentScroll > lastScroll && currentScroll > 80) {
+        navbar.style.top = "-100px";
     } else {
         navbar.style.top = "0";
     }
 
-    lastScrollTop = scrollTop;
+    lastScroll = currentScroll;
 });
 </script>
 
