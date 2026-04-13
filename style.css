@@ -17,14 +17,15 @@ html {
 /* NAVBAR */
 #navbar {
   background: #0d2c6c !important;
-  transition: top 0.4s;
+  transition: top 0.4s ease;
+  z-index: 9999;
 }
 
 .nav-link {
-  font-weight: bold;
-  color: black !important;
+  color: white !important;
 }
 
+/* HERO */
 .hero {
   height: 90vh;
   background: url('images/hero.jpg') center/cover no-repeat;
@@ -51,70 +52,28 @@ html {
   font-weight: 700;
 }
 
+/* CARDS */
 .section-card {
   background: white;
   padding: 50px;
   margin-top: 40px;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-
-  opacity: 0;
-  transform: translateY(50px);
-  transition: 0.6s;
 }
 
+/* SERVICES */
 .service-box {
   padding: 25px;
   transition: 0.3s;
 }
 
 .service-box:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
 .icon {
-  font-size: 30px;
+  font-size: 28px;
   color: #0d2c6c;
-  margin-bottom: 10px;
-}
-
-.cert-img {
-  width: 180px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
-}
-
-.cert-img:hover {
-  transform: scale(1.05);
-}
-
-.footer {
-  background: #0d2c6c;
-  color: white;
-  padding: 15px;
-  margin-top: 40px;
-}
-
-/* SOCIAL ICONS */
-.social a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 18px;
-  color: white;
-  padding: 12px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.whatsapp { background: #25D366; }
-.facebook { background: #1877F2; }
-.instagram { background: #E4405F; }
-.linkedin { background: #0077B5; }
-.youtube { background: #FF0000; }
-
-.social a:hover {
-  transform: scale(1.1);
 }
 
 /* DIRECTORS */
@@ -123,28 +82,42 @@ html {
   height: 140px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
 }
 
-/* IMAGE POPUP */
-#imagePopup {
+/* FLOATING SOCIAL (PROFESSIONAL) */
+.floating-icons {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.9);
-  display: none;
-  justify-content: center;
+  right: 15px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 9999;
+}
+
+.floating-icons a {
+  width: 48px;
+  height: 48px;
+  background: #0d2c6c;
+  color: white;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: 0.3s;
 }
 
-#imagePopup img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
+.floating-icons a:hover {
+  transform: translateY(-3px) scale(1.05);
 }
 
-.gmail {
-  background: #EA4335;
+/* FOOTER */
+.footer {
+  background: #0d2c6c;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
 }
