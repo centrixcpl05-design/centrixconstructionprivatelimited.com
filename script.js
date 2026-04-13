@@ -1,3 +1,4 @@
+// SCROLL ANIMATION
 window.addEventListener("scroll", function() {
   let cards = document.querySelectorAll(".section-card");
 
@@ -11,3 +12,28 @@ window.addEventListener("scroll", function() {
     }
   });
 });
+
+// NAVBAR HIDE/SHOW
+let prevScroll = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScroll = window.pageYOffset;
+
+  if (prevScroll > currentScroll) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+
+  prevScroll = currentScroll;
+};
+
+// IMAGE POPUP
+function openImage(src) {
+  document.getElementById("imagePopup").style.display = "flex";
+  document.getElementById("popupImg").src = src;
+}
+
+function closeImage() {
+  document.getElementById("imagePopup").style.display = "none";
+}
