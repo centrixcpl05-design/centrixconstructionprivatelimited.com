@@ -18,7 +18,23 @@ html {
 #navbar {
   background: #0d2c6c !important;
   transition: top 0.4s ease;
+  position: fixed;
+  width: 100%;
   z-index: 9999;
+}
+
+.cert-img {
+  width: 140px;
+  margin: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#certifications .mt-4 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -121,3 +137,4 @@ html {
   padding: 15px;
   margin-top: 40px;
 }
+
