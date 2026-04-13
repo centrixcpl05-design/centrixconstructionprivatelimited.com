@@ -138,3 +138,37 @@ html {
   margin-top: 40px;
 }
 
+/* NAVBAR COMPACT */
+#navbar {
+  background: #0d2c6c !important;
+  padding: 6px 0;
+  transition: top 0.4s ease;
+  z-index: 9999;
+}
+
+/* NAV LINKS SMALL */
+.nav-link {
+  color: white !important;
+  font-size: 13px;
+  padding: 6px 10px !important;
+  white-space: nowrap;
+}
+
+/* HORIZONTAL SCROLL ON MOBILE */
+.nav-scroll {
+  overflow-x: auto;
+}
+
+.nav-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* KEEP LINKS IN ONE LINE */
+.navbar-nav {
+  flex-wrap: nowrap;
+}
+
+/* SMALL LOGO */
+.navbar-brand img {
+  width: 32px;
+}
