@@ -106,3 +106,36 @@ html {
 .social a:hover {
   transform: scale(1.1);
 }
+
+/* NAVBAR HIDE SHOW */
+#navbar {
+  transition: top 0.4s;
+}
+
+/* DIRECTORS */
+.director-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* IMAGE POPUP */
+#imagePopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagePopup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
