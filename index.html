@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>construction in delhi | Centrix Construction Pvt Ltd</title> 
+<title>construction company in delhi | Centrix Construction Pvt Ltd</title> 
 
 <meta name="description" content="Centrix Construction Pvt Ltd is a leading construction company in Delhi offering civil construction, maintenance, contracting, and government tender services.">
 
@@ -33,18 +33,18 @@
 <nav id="navbar" class="navbar navbar-expand-lg shadow-sm fixed-top">
   <div class="container">
 
-    <a class="navbar-brand fw-bold text-black d-flex align-items-center">
+    <a class="navbar-brand fw-bold text-white d-flex align-items-center">
       <img src="images/logo.png" width="40" class="me-2">
       CCPL
     </a>
 
     <ul class="navbar-nav ms-auto">
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#home">Home</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#directors">Directors</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#services">Services</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#certifications">Certifications</a></li>
-      <li class="nav-item"><a class="nav-link fw-bold text-black" href="#contact">Contact</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#directors">Directors</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#services">Services</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#certifications">Certifications</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold text-white" href="#contact">Contact</a></li>
     </ul>
 
   </div>
@@ -147,25 +147,12 @@
   </div>
 </section>
 
-<!-- SOCIAL BAR -->
-<div class="social text-center mt-3">
-  <a href="https://wa.me/919650550414" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://facebook.com/" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://instagram.com/centrixconstructionpvtltd" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://youtube.com/@Centrixconstructionpvtltd" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
-  <a href="https://linkedin.com/" target="_blank" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-  <a href="https://www.justdial.com/CENTRIX CONSTRUCTION PRIVATE LIMITED" target="_blank" class="linkedin"><i class="fa fa-phone"></i></a>
-</div>
-  
- <!-- GMAIL -->
-  <a href="mailto:centrixcpl05@gmail.com" class="gmail">
-    <i class="fa fa-envelope"></i>
-  </a>
-</div>
-
-<!-- IMAGE POPUP -->
-<div id="imagePopup" onclick="closeImage()">
-  <img id="popupImg">
+<!-- FLOATING SOCIAL + MAIL -->
+<div class="floating-icons">
+  <a href="https://wa.me/919650550414" target="_blank"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://instagram.com/centrixconstructionpvtltd" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://youtube.com/@Centrixconstructionpvtltd" target="_blank"><i class="fab fa-youtube"></i></a>
+  <a href="mailto:centrixcpl05@gmail.com"><i class="fa fa-envelope"></i></a>
 </div>
 
 <!-- CONTACT -->
@@ -188,3 +175,23 @@
 <footer class="footer text-center">
   © 2026 Centrix Construction Pvt Ltd
 </footer>
+
+<script>
+let lastScrollTop = 0;
+const navbar = document.getElementById("navbar");
+
+window.addEventListener("scroll", function () {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 50) {
+        navbar.style.top = "-80px";
+    } else {
+        navbar.style.top = "0";
+    }
+
+    lastScrollTop = scrollTop;
+});
+</script>
+
+</body>
+</html>
