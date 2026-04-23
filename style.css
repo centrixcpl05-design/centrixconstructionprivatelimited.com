@@ -172,3 +172,37 @@ html {
 .navbar-brand img {
   width: 32px;
 }
+
+.section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.text-content {
+  flex: 1;
+}
+
+.image-content {
+  flex: 1;
+  text-align: right;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .section-flex {
+    flex-direction: column;
+  }
+
+  .image-content {
+    text-align: center;
+  }
+}
