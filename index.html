@@ -20,13 +20,29 @@
 
 </head>
 
+   <link rel="icon" href="images/logo.png" type="image/png">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Centrix Construction Private Limited",
-  "url": "https://centrixconstructionprivatelimited.com",
-  "logo": "https://centrixconstructionprivatelimited.com/images/logo.png"
+  "url": "https://www.centrixconstructionprivatelimited.com",
+  "logo": "https://www.centrixconstructionprivatelimited.com/images/logo.png"
+}
+</script>
+
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Centrix Construction Pvt Ltd",
+ "url": "https://www.centrixconstructionprivatelimited.com",
+ "potentialAction": {
+   "@type": "SearchAction",
+   "target": "https://www.centrixconstructionprivatelimited.com/?s={search_term_string}",
+   "query-input": "required name=search_term_string"
+ }
 }
 </script>
 
@@ -64,6 +80,14 @@
   </div>
 </nav>
 
+  <nav>
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/services">Services</a>
+  <a href="/certifications">Certifications</a>
+  <a href="/contact">Contact</a>
+</nav>
+  
 <section id="home" class="hero">
   <div class="overlay"></div>
   <div class="hero-content">
@@ -189,28 +213,40 @@
   </div>
 </section>
 
-<section class="container section-card card">
-  <h3 class="text-center">Why Choose Us</h3>
-  <ul class="mt-4">
-    <li>Experienced and skilled labour team</li>
-    <li>On-time project completion</li>
-    <li>Competitive and transparent pricing</li>
-    <li>Quality materials and finishing standards</li>
-    <li>Complete end-to-end service execution</li>
-    <li>Strong site supervision and monitoring</li>
-  </ul>
-</section>
+<div class="section-flex">
+  <div class="text-content">
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>Experienced and skilled labour team</li>
+      <li>On-time project completion</li>
+      <li>Competitive and transparent pricing</li>
+      <li>Quality materials and finishing standards</li>
+      <li>Complete end-to-end service execution</li>
+      <li>Strong site supervision and monitoring</li>
+    </ul>
+  </div>
 
-<section class="container section-card card">
-  <h3 class="text-center">Our Work Process</h3>
-  <ol class="mt-4">
-    <li>Site visit and requirement understanding</li>
-    <li>Detailed quotation and planning</li>
-    <li>Material selection and approval</li>
-    <li>Execution with proper supervision</li>
-    <li>Final finishing and project handover</li>
-  </ol>
-</section>
+  <div class="image-content">
+    <img src="images/whychooseus.png" alt="Why Choose Us">
+  </div>
+</div>
+
+<div class="section-flex">
+  <div class="text-content">
+    <h2>Our Work Process</h2>
+    <ol>
+      <li>Site visit and requirement understanding</li>
+      <li>Detailed quotation and planning</li>
+      <li>Material selection and approval</li>
+      <li>Execution with proper supervision</li>
+      <li>Final finishing and project handover</li>
+    </ol>
+  </div>
+
+  <div class="image-content">
+    <img src="images/workprocess.png" alt="Work Process">
+  </div>
+</div>
 
 <section id="certifications" class="container section-card text-center card">
   <h3>Certifications</h3>
@@ -246,7 +282,7 @@
 </section>
 
 <footer class="footer text-center">
-  © 2026 Centrix Construction Pvt Ltd
+  © 2026 Centrix Construction Private Limited
 </footer>
 
 <!-- IMAGE POPUP FIX -->
