@@ -175,23 +175,28 @@ html {
 
 .section-flex {
   display: flex;
-  align-items: center;
+  align-items: center;          /* vertical alignment */
   justify-content: space-between;
-  gap: 40px;
-  margin: 60px 0;
+  gap: 30px;                    /* reduce gap */
+  margin: 60px auto;
+  max-width: 1200px;            /* keep content centered */
+  padding: 0 20px;
 }
 
 .text-content {
   flex: 1;
+  max-width: 550px;             /* control text width */
 }
 
 .image-content {
   flex: 1;
-  text-align: right;
+  display: flex;
+  justify-content: center;      /* center image properly */
 }
 
 .image-content img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 450px;             /* control image size */
   height: auto;
   border-radius: 10px;
 }
