@@ -253,3 +253,104 @@ html {
     max-height: 90%;
     border-radius: 10px;
 }
+
+/* ===== CERTIFICATION PREMIUM ===== */
+.cert-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cert-card {
+    width: 300px;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.cert-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.cert-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.cert-card p {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* MODAL */
+.cert-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+}
+
+.cert-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 12px;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.7); opacity: 0;}
+    to {transform: scale(1); opacity: 1;}
+}
+
+/* ===== GAP FIX ===== */
+.section-flex {
+  gap: 10px !important;
+  margin: 40px auto !important;
+}
+
+.image-content img {
+  max-width: 380px !important;
+}
+
+/* ===== SMOOTH UI ===== */
+* {
+  transition: all 0.3s ease;
+}
+
+/* ===== SCROLL ANIMATION ===== */
+.section-card {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* ===== FLOATING BANNER ===== */
+.floating-banner {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #0d2c6c;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  z-index: 9999;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
