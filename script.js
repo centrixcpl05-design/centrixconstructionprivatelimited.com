@@ -1,3 +1,11 @@
+function openModal(img) {
+    document.getElementById("certModal").style.display = "flex";
+    document.getElementById("certModalImg").src = img.src;
+}
+
+function closeModal() {
+    document.getElementById("certModal").style.display = "none";
+}
 // SCROLL ANIMATION
 window.addEventListener("scroll", function() {
   let cards = document.querySelectorAll(".section-card");
