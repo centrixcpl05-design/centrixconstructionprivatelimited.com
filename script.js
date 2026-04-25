@@ -1,3 +1,4 @@
+// CERT MODAL
 function openModal(img) {
     document.getElementById("certModal").style.display = "flex";
     document.getElementById("certModalImg").src = img.src;
@@ -5,8 +6,9 @@ function openModal(img) {
 
 function closeModal() {
     document.getElementById("certModal").style.display = "none";
-}// SCROLL ANIMATION
+}
 
+// SCROLL ANIMATION (SMOOTH)
 window.addEventListener("scroll", function() {
   let cards = document.querySelectorAll(".section-card");
 
@@ -36,7 +38,23 @@ window.onscroll = function() {
   prevScroll = currentScroll;
 };
 
-// IMAGE POPUP
+// FLOATING AUTO TEXT CHANGE
+const messages = [
+  "✔ Trusted Construction Company in Delhi NCR",
+  "✔ 100+ Projects Completed",
+  "✔ Government Tender Specialist",
+  "✔ Quality Work with Guarantee",
+  "✔ On-Time Project Delivery"
+];
+
+let i = 0;
+
+setInterval(() => {
+  i = (i + 1) % messages.length;
+  document.getElementById("floatingBanner").innerText = messages[i];
+}, 3000);
+
+// OLD POPUP (kept for compatibility)
 function openImage(src) {
   document.getElementById("imagePopup").style.display = "flex";
   document.getElementById("popupImg").src = src;
